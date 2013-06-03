@@ -40,4 +40,5 @@ Build step
 3. Install **nasm-2.10.07** (In tools/nasm-2.10.07.tar.bz2). Easy to install it: `./configure`, `make`, `sudo make install`
 4. Run script **build-all.sh** `./build-all.sh`
 
+All done, the universal libs for ffmpeg are in "build/universal/", and the universal external libs are in "external-libs/build/#LIB_NAME#/universal/"
 Have fun!
