@@ -3,7 +3,18 @@ ffmpeg-build4ios-script
 
 Build ffmpeg-1.2 for iOS(armv7,armv7s,i386) scripts,and some external plugins
 
+FFMpeg libs:
+============
+- libavcodec
+- libavdevice
+- libavfilter
+- libavformat
+- libavutil
+- libpostproc
+- libswresample
+- libswscale
 
+All are available for **i386, armv7, armv7s**
 
 Support external libs:
 =========================
