@@ -41,4 +41,5 @@ Build step
 4. Run script **build-all.sh** `./build-all.sh`
 
 All done, the universal libs for ffmpeg are in "build/universal/", and the universal external libs are in "external-libs/build/#LIB_NAME#/universal/"
+
 Have fun!
