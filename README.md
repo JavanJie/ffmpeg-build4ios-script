@@ -3,8 +3,7 @@ ffmpeg-build4ios-script
 
 Build ffmpeg-1.2 for iOS(armv7,armv7s,i386) scripts,and some external plugins
 
-FFMpeg libs:
-============
+###FFMpeg libs:
 - libavcodec
 - libavdevice
 - libavfilter
@@ -13,11 +12,9 @@ FFMpeg libs:
 - libpostproc
 - libswresample
 - libswscale
-
 All are available for **i386, armv7, armv7s**
 
-Support external libs:
-=========================
+###Support external libs:
 - aacenc(i386, armv7, armv7s)
 - amrwbenc(i386, armv7, armv7s)
 - opencore-amr(i386, armv7, armv7s)
@@ -27,19 +24,15 @@ Support external libs:
 - libvpx(i386, armv7)
 - x264(i386, armv7, armv7s)
 	
-
-Required
-========
+###Required
 - Xcode4.6.2 or newer
 - iOS6.1 or newer
   
-Build step
-==========
+###Build step
 1. Copy "gas-preprocessor.pl" from "tools/gas-preprocessor.pl" to "/usr/local/bin" `sudo cp tools/gas-preprocessor.pl /usr/local/bin/`, and then `sudo chmod 777 /usr/local/bin/gas-preprocessor.pl`. **gas-preprocessor.pl** was stolen from "http://github.com/yuvi/gas-preprocessor"
 2. Install **yasm-1.2.0** (In tools/yasm-1.2.0.tar.gz). Easy to install it: `./configure`, `make`, `sudo make install`
 3. Install **nasm-2.10.07** (In tools/nasm-2.10.07.tar.bz2). Easy to install it: `./configure`, `make`, `sudo make install`
 4. Run script **build-all.sh** `./build-all.sh`
-
 All done, the universal libs for ffmpeg are in "build/universal/", and the universal external libs are in "external-libs/build/#LIB_NAME#/universal/"
 
 Have fun!
