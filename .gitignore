@@ -1,0 +1,6 @@
+build/
+ffmpeg/
+external-libs/*/
+.DS_Store
+#.gitignore
+*.swp
