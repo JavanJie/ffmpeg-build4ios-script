@@ -17,7 +17,7 @@ IOS_VERSION='6.1'
 #CC="$DEVELOPER_ROOT/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang"
 
 CPU_CORE_COUNT=`sysctl -n machdep.cpu.core_count` #Check cpu core number
-MAKE_JOBS=$CPU_CORE_COUNT+1
+MAKE_JOBS=$((CPU_CORE_COUNT+1))
 
 function build_with_args() {
 	local arch=$1
@@ -63,7 +63,7 @@ function build_with_args() {
 
 	echo "Building for $arch ..."
 
-	make #-j$MAKE_JOBS
+	make -j $MAKE_JOBS
 	make install
 
 	echo "Build for $arch completed!"

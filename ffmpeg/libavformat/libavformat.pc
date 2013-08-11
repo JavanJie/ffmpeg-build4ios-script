@@ -1,0 +1,14 @@
+prefix=/Users/md313/Documents/Developer/OpenSource/ffmpeg-build4ios-script/build/i386
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 55.13.102
+Requires: libavcodec = 55.24.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavformat -liconv -lx264 -lvo-amrwbenc -lvo-aacenc -ltwolame -ltwolame -lopencore-amrwb -lopencore-amrnb -lmp3lame -lfdk-aac -ldl -lm -lbz2 -lz
+Libs.private: 
+Cflags: -I${includedir}
